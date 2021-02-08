@@ -1,0 +1,19 @@
+.loginPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox{
+    background-color: #a19898;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px #00000029;
+    box-sizing: border-box;
+    height: 52vh;
+    width: 50vw;
+    margin-top: 8%;
+}
