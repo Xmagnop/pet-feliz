@@ -1,19 +1,103 @@
 .loginPage{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    height: 100vh;
+    background-color: #FFFFF0;
 }
 
 .loginBox{
-    background-color: #a19898;
+    background-color: #FFFFFF;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0px 0px 6px #00000029;
+    box-shadow: 0px 0px 15px #00000029;
     box-sizing: border-box;
-    height: 52vh;
-    width: 50vw;
-    margin-top: 8%;
+    height: 55vh;
+    width: 60vw;
+    margin-top: 6%;
+    z-index: 100;
+}
+
+.elipse1{
+    position: absolute;
+    width: 317.61px;
+    height: 157.03px;
+    right: 30.61px;
+    top: 126.32px;
+    background: #6C5844;
+    transform: rotate(-80.81deg);
+    border-radius: 50%;
+}
+
+.elipse2{
+    position: absolute;
+    width: 378.36px;
+    height: 218.68px;
+    right: 821.65px;
+    top: -108px;
+    background: #FBCC00;
+    transform: rotate(30.25deg);
+    border-radius: 50%;
+}
+
+.elipse3{
+    position: absolute;
+    width: 433.9px;
+    height: 418.28px;
+    right: 1511.1px;
+    top: 526.02px;
+    background: #4EBDEA;
+    border-radius: 50%;
+}
+
+.elipse4{
+    position: absolute;
+    width: 347.61px;
+    height: 207.03px;
+    right: 282.39px;
+    top: 533.32px;
+    background: #2F1A1A;
+    transform: rotate(-34.81deg);
+    border-radius: 50%;
+}
+
+.elipse5{
+    position: absolute;
+    width: 230.83px;
+    height: 218.68px;
+    right: 0.83px;
+    top: 706px;
+    background: #C4672C;
+    border-radius: 50%;
+}
+
+.elipse6{
+    position: absolute;
+    width: 378.36px;
+    height: 218.68px;
+    right: 821.65px;
+    top: 660px;
+    background: #3016a7;
+    transform: rotate(20.25deg);
+    border-radius: 50%;
+}
+
+.elipse7{
+    position: absolute;
+    width: 347.61px;
+    height: 207.03px;
+    right: 1520.39px;
+    top: 33.32px;
+    background: #c50c0c;
+    transform: rotate(-4.81deg);
+    border-radius: 50%;
+}
+
+.loginForm{
+    height: 100vh;
+    width: 60vh;
+    background-color: #0863CD;
 }
