@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Grid } from '@material-ui/core';
-import './Login.css';
+import './cadastro1.css';
+import imagemCadastro1 from '../../images/imagem-cadastro1.png';
 import imagemLogin from '../../images/imagem-loginPage.png';
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
@@ -11,12 +12,10 @@ import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined"
 import VisibilityOutlinedIcon from "@material-ui/icons/VisibilityOutlined";
 import { Link } from 'react-router-dom'
 
-export default function LoginPage() {
+export default function Cadastro1(){
 
-    const [showPassword, setShowPassword] = useState(false);
-    const handleShowPassword = () => setShowPassword(!showPassword);
+    return(
 
-    return (
         <>
             <Grid container className="loginPage">
                 <Grid className="elipse1"></Grid>
@@ -28,17 +27,17 @@ export default function LoginPage() {
                 <Grid className="elipse7"></Grid>
                 <Grid className="loginBox">
                     <Grid>
-                        <img src={imagemLogin} />
+                        <img src={imagemCadastro1} />
                     </Grid>
                     <Grid className="loginForm">
                         <Grid>
                             <h1 style={{
                                 color: '#FDFDFD',
                                 fontFamily: 'Malgun Gothic',
-                                fontSize: '70px',
+                                fontSize: '60px',
                                 marginLeft: '30%',
                                 fontWeight: 'bold'
-                            }}>Login</h1>
+                            }}>Cadastro</h1>
                             <p style={{
                                 color: '#FDFDFD',
                                 fontFamily: 'Malgun Gothic',
@@ -46,16 +45,19 @@ export default function LoginPage() {
                                 marginLeft: '32%',
                                 fontSize: '26px',
                                 fontWeight: '500',
-                            }}>Bem Vindo!</p>
+                                width: '100%'
+                            }}>Insira suas informações</p>
                             <FormControl variant="outlined" style={{
                                 width: "130%",
                                 marginLeft: '60%'
                             }}>
-                                <TextField
+                                <TextField style={{
+                                    marginTop: '5%'
+                                }}
                                     id="outlined-adornment-password"
-                                    placeholder="E-mail"
+                                    placeholder="Nome"
                                     variant="outlined"
-                                    type="email"
+                                    type="text"
                                     InputProps={{
                                         endAdornment: <InputAdornment></InputAdornment>,
                                     }}
@@ -63,26 +65,23 @@ export default function LoginPage() {
                                 <TextField style={{
                                     marginTop: '3%'
                                 }}
-                                    placeholder="Senha"
+                                    placeholder="Sobrenome"
                                     id="outlined-adornment-password"
                                     variant="outlined"
-                                    type={showPassword ? "text" : "password"}
+                                    type="text"
                                     InputProps={{
-                                        endAdornment: (
-                                            <InputAdornment position="end">
-                                                <IconButton
-                                                    id="icon_button_password"
-                                                    aria-label="Toggle password visibility"
-                                                    onClick={handleShowPassword}
-                                                >
-                                                    {showPassword ? (
-                                                        <VisibilityOutlinedIcon />
-                                                    ) : (
-                                                            <VisibilityOffOutlinedIcon />
-                                                        )}
-                                                </IconButton>
-                                            </InputAdornment>
-                                        ),
+                                        endAdornment: <InputAdornment></InputAdornment>,
+                                    }}
+                                />
+                                <TextField style={{
+                                    marginTop:'3%'
+                                }}
+                                    id="outlined-adornment-password"
+                                    placeholder="Data de nascimento"
+                                    variant="outlined"
+                                    type="email"
+                                    InputProps={{
+                                        endAdornment: <InputAdornment></InputAdornment>,
                                     }}
                                 />
                                 {/* Botao enviar */}
@@ -103,7 +102,7 @@ export default function LoginPage() {
                                             backgroundColor: "#F36B53",
                                         }}
                                     >
-                                        Login
+                                        Continuar
                                 </Button>
                                 </div>
                                 <div
@@ -113,7 +112,7 @@ export default function LoginPage() {
                                         justifyContent: "center",
                                     }}
                                 >
-                                    <Link to="/cadastro1" style={{
+                                    <Link to="/" style={{
                                         textDecoration: 'none'
                                     }}>
                                         <Button
@@ -127,7 +126,7 @@ export default function LoginPage() {
                                                 marginTop: '2%'
                                             }}
                                         >
-                                            Cadastre-se agora!
+                                            Voltar
                                         </Button>
                                     </Link>
                                 </div>
@@ -137,5 +136,7 @@ export default function LoginPage() {
                 </Grid>
             </Grid>
         </>
+
     );
+
 }

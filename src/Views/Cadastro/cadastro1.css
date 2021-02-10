@@ -98,6 +98,7 @@
 .loginForm{
     display: flex;
     height: inherit;
+    width: 79vh;
     border-top-right-radius: 1%;
     border-bottom-right-radius: 1%;
     background-color: #0863CD;
