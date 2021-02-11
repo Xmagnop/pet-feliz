@@ -53,7 +53,7 @@ export default function Cadastro1() {
                                         marginTop: '5%'
                                     }}
                                         id="outlined-adornment-password"
-                                        placeholder="Nome"
+                                        placeholder="Telefone"
                                         variant="outlined"
                                         type="text"
                                         InputProps={{
@@ -63,7 +63,7 @@ export default function Cadastro1() {
                                     <TextField style={{
                                         marginTop: '3%'
                                     }}
-                                        placeholder="Sobrenome"
+                                        placeholder="Email"
                                         id="outlined-adornment-password"
                                         variant="outlined"
                                         type="text"
@@ -75,37 +75,32 @@ export default function Cadastro1() {
                                         marginTop: '3%'
                                     }}
                                         id="outlined-adornment-password"
-                                        placeholder="Data de nascimento"
+                                        placeholder="Senha"
                                         variant="outlined"
                                         type="email"
                                         InputProps={{
                                             endAdornment: <InputAdornment></InputAdornment>,
                                         }}
                                     />
-                                    <Grid item style={{
+                                    <Grid style={{
                                         display: "flex",
                                         justifyContent: "center",
-                                        alignItems: 'center',
-                                        marginTop: '7%',
+                                        marginTop: '7%'
                                     }}>
-                                        <Link to="/cadastro2" style={{
-                                            textDecoration: 'none',
-                                        }}>
-                                            <Button
-                                                type="submit"
-                                                style={{
-                                                    textTransform: 'none',
-                                                    color: "#ffffff",
-                                                    fontSize: 20,
-                                                    borderRadius: 20,
-                                                    marginLeft: '-28%',
-                                                    width: "160%",
-                                                    backgroundColor: "#F36B53",
-                                                }}
-                                            >
-                                                Continuar
-                                            </Button>
-                                        </Link>
+                                        <Button
+                                            type="submit"
+                                            variant="contained"
+                                            style={{
+                                                textTransform: "none",
+                                                color: "#ffffff",
+                                                fontSize: 20,
+                                                borderRadius: 20,
+                                                width: "50%",
+                                                backgroundColor: "#F36B53",
+                                            }}
+                                        >
+                                            Cadastrar
+                                        </Button>
                                     </Grid>
                                     <Grid
                                         style={{
@@ -114,7 +109,7 @@ export default function Cadastro1() {
                                             justifyContent: "center",
                                         }}
                                     >
-                                        <Link to="/" style={{
+                                        <Link to="/cadastro1" style={{
                                             textDecoration: 'none'
                                         }}>
                                             <Button
