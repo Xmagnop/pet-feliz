@@ -118,3 +118,14 @@
     border-radius: 20px !important;
     margin-bottom: 2% !important;
   }
+
+  #outlined-multiline{
+      background-color: #ffffff;
+      padding: 4%;
+      border-radius: 20px;
+  }
+
+  .MuiOutlinedInput-multiline{
+      padding: 0 !important;
+      border-radius: 20px !important;
+  }

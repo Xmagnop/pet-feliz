@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Grid } from '@material-ui/core';
 import './cadastro1.css';
 import imagemFundo from '../../images/fundo-pet-feliz.png';
 import imagemCadastro1 from '../../images/imagem-cadastro1.png';
-import imagemLogin from '../../images/imagem-loginPage.png';
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
-import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined";
-import VisibilityOutlinedIcon from "@material-ui/icons/VisibilityOutlined";
 import { Link } from 'react-router-dom'
 
 export default function Cadastro1() {
@@ -19,12 +15,14 @@ export default function Cadastro1() {
 
         <>
             <Grid container className="loginPage">
-                <img src={imagemFundo} style={{
+                <img alt="" src={imagemFundo} style={{
                     position: 'absolute'
                 }} />
                 <Grid className="loginBox">
-                    <Grid>
-                        <img src={imagemCadastro1} />
+                    <Grid style={{
+                        width:'35%'
+                    }}>
+                        <img alt="" src={imagemCadastro1} />
                     </Grid>
                     <Grid className="loginForm">
                         <Grid>
