@@ -2,25 +2,14 @@ import React from "react";
 import { Grid } from '@material-ui/core';
 import './cadastro1.css';
 import imagemFundo from '../../images/fundo-pet-feliz.png';
-import imagemCadastro1 from '../../images/imagem-cadastro1.png';
+import imagemCadastroPet from '../../images/imagem-cadastro-pet.png';
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import { Link } from 'react-router-dom'
-import swal from 'sweetalert';
 
-export default function Cadastro2() {
-
-    const submitCadastro = () => {
-        return(
-            swal({
-                title: "Cadastro Realizado!",
-                text: "obrigado por entrar em nossa comunidade",
-                icon: "success",
-              })
-        );
-    }
+export default function CadastroPet1() {
 
     return (
 
@@ -29,40 +18,43 @@ export default function Cadastro2() {
                 <img alt='' src={imagemFundo} style={{
                     position: 'absolute'
                 }} />
-                <Grid className="loginBox">
+                <Grid className="loginBox" style={{
+                    width:'59%'
+                }}>
                     <Grid style={{
-                        width:'35%'
+                        width: '35%'
                     }}>
-                        <img alt='' src={imagemCadastro1} />
+                        <img alt='' src={imagemCadastroPet} />
                     </Grid>
                     <Grid className="loginForm">
-                        <Grid>
+                        <Grid style={{
+                            marginTop: '-3%'
+                        }}>
                             <h1 style={{
+                                width: '100%',
                                 color: '#FDFDFD',
                                 fontFamily: 'Malgun Gothic',
                                 fontSize: '60px',
-                                marginLeft: '30%',
+                                marginLeft: '10%',
                                 fontWeight: 'bold'
-                            }}>Cadastro</h1>
+                            }}>Cadastro PET</h1>
                             <p style={{
                                 color: '#FDFDFD',
                                 fontFamily: 'Malgun Gothic',
-                                marginTop: '-15%',
-                                marginLeft: '32%',
+                                marginTop: '-13%',
+                                marginLeft: '12%',
                                 fontSize: '26px',
                                 fontWeight: '500',
                                 width: '100%'
-                            }}>Insira suas informações</p>
+                            }}>Informações do PET</p>
                             <Grid alignItems="center" justifyContent="center">
                                 <FormControl variant="outlined" style={{
-                                    width: "130%",
-                                    marginLeft: '65%'
+                                    width: "100%",
+                                    marginLeft: '50%'
                                 }}>
-                                    <TextField style={{
-                                        marginTop: '5%'
-                                    }}
+                                    <TextField
                                         id="outlined-adornment-password"
-                                        placeholder="Telefone"
+                                        placeholder="Nome"
                                         variant="outlined"
                                         type="text"
                                         InputProps={{
@@ -72,7 +64,7 @@ export default function Cadastro2() {
                                     <TextField style={{
                                         marginTop: '3%'
                                     }}
-                                        placeholder="Email"
+                                        placeholder="Idade"
                                         id="outlined-adornment-password"
                                         variant="outlined"
                                         type="text"
@@ -83,34 +75,36 @@ export default function Cadastro2() {
                                     <TextField style={{
                                         marginTop: '3%'
                                     }}
-                                        id="outlined-adornment-password"
-                                        placeholder="Senha"
+                                        id="outlined-multiline"
+                                        placeholder="Por que adotar?"
+                                        multiline
+                                        rows={5}
                                         variant="outlined"
-                                        type="email"
-                                        InputProps={{
-                                            endAdornment: <InputAdornment></InputAdornment>,
-                                        }}
                                     />
-                                    <Grid style={{
+                                    <Grid item style={{
                                         display: "flex",
                                         justifyContent: "center",
-                                        marginTop: '7%'
+                                        alignItems: 'center',
+                                        marginTop: '5%',
                                     }}>
-                                        <Button
-                                            type="submit"
-                                            variant="contained"
-                                            onClick={submitCadastro}
-                                            style={{
-                                                textTransform: "none",
-                                                color: "#ffffff",
-                                                fontSize: 20,
-                                                borderRadius: 20,
-                                                width: "50%",
-                                                backgroundColor: "#F36B53",
-                                            }}
-                                        >
-                                            Cadastrar
-                                        </Button>
+                                        <Link to="/cadastropet2" style={{
+                                            textDecoration: 'none',
+                                        }}>
+                                            <Button
+                                                type="submit"
+                                                style={{
+                                                    textTransform: 'none',
+                                                    color: "#ffffff",
+                                                    fontSize: 20,
+                                                    borderRadius: 20,
+                                                    marginLeft: '-28%',
+                                                    width: "160%",
+                                                    backgroundColor: "#F36B53",
+                                                }}
+                                            >
+                                                Continuar
+                                            </Button>
+                                        </Link>
                                     </Grid>
                                     <Grid
                                         style={{
@@ -119,7 +113,7 @@ export default function Cadastro2() {
                                             justifyContent: "center",
                                         }}
                                     >
-                                        <Link to="/cadastro1" style={{
+                                        <Link to="/cadastropet1" style={{
                                             textDecoration: 'none'
                                         }}>
                                             <Button

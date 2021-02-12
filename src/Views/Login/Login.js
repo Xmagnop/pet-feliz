@@ -20,12 +20,12 @@ export default function LoginPage() {
     return (
         <>
             <Grid container className="loginPage">
-                <img src={imagemFundo} style={{
+                <img alt='' src={imagemFundo} style={{
                     position: 'absolute'
                 }}/>
                 <Grid className="loginBox">
                     <Grid>
-                        <img src={imagemLogin} />
+                        <img alt='' src={imagemLogin} />
                     </Grid>
                     <Grid className="loginForm">
                         <Grid>
