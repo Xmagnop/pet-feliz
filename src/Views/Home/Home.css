@@ -5,9 +5,10 @@
     background-color: #FFFFF0;
 }
 
-.loginBox{
+.loginBoxHome{
     background-color: #FFFFFF;
     display: flex;
+    flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
     border-radius: 1%;
@@ -15,7 +16,7 @@
     margin-top: 0%;
     box-sizing: border-box;
     height: inherit;
-    width: 80vw;
+    width: 70vw;
     z-index: 101;
 }
 
@@ -23,4 +24,16 @@
     display:flex;
     justify-content: space-around !important;
     align-items: flex-start;
+}
+
+.middleHome{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input[type="text" i] {
+    background-color: #ffffff;
+    padding-right: 0px !important;
+    border-radius: 20px !important;
 }

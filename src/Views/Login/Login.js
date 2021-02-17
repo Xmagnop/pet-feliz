@@ -22,7 +22,7 @@ export default function LoginPage() {
             <Grid container className="loginPage">
                 <img alt='' src={imagemFundo} style={{
                     position: 'absolute'
-                }}/>
+                }} />
                 <Grid className="loginBox">
                     <Grid>
                         <img alt='' src={imagemLogin} />
@@ -89,20 +89,24 @@ export default function LoginPage() {
                                     justifyContent: "center",
                                     marginTop: '10%'
                                 }}>
-                                    <Button
-                                        type="submit"
-                                        variant="contained"
-                                        style={{
-                                            textTransform: "none",
-                                            color: "#ffffff",
-                                            fontSize: 20,
-                                            borderRadius: 20,
-                                            width: "50%",
-                                            backgroundColor: "#F36B53",
-                                        }}
-                                    >
-                                        Login
-                                </Button>
+                                    <Link to="/home" style={{
+                                            textDecoration: 'none',
+                                        }}>
+                                            <Button
+                                                type="submit"
+                                                style={{
+                                                    textTransform: 'none',
+                                                    color: "#ffffff",
+                                                    fontSize: 20,
+                                                    borderRadius: 20,
+                                                    marginLeft: '-75%',
+                                                    width: "250%",
+                                                    backgroundColor: "#F36B53",
+                                                }}
+                                            >
+                                                Login
+                                            </Button>
+                                        </Link>
                                 </div>
                                 <div
                                     style={{
