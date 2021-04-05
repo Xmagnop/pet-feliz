@@ -57,18 +57,22 @@ export default function HomePage() {
                     </Grid>
                     <Grid container className="middleHome">
                         <Grid item>
-                            <TextField style={{
-                                width: '400%',
-                                marginLeft: '130%'
+                            <input style={{
+                                width: '100%',
+                                height: '30px',
+                                // marginLeft: '130%'
+                                borderRadius: '20px'
                             }}
                                 id="outlined-adornment-search"
                                 placeholder="Pesquise um PET"
                                 variant="outlined"
                                 type="text"
-                                // InputProps={{
-                                //     endAdornment: <InputAdornment></InputAdornment>,
-                                // }}
                             />
+                        </Grid>
+                    </Grid>
+                    <Grid container className="bottomHome">
+                        <Grid item>
+                            
                         </Grid>
                     </Grid>
                 </Grid>
