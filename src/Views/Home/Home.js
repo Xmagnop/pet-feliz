@@ -1,12 +1,13 @@
 import React from 'react';
-import { Grid, TextField } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import imagemFundo from '../../images/fundo-pet-feliz.png';
 import imagemLogo from '../../images/imagem-loginPage.png';
 import './Home.css'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Button from "@material-ui/core/Button";
 import { Link } from 'react-router-dom';
-import InputAdornment from "@material-ui/core/InputAdornment";
+import imagemDog from '../../images/cachorropetfeliz.jpg';
+import Divider from '@material-ui/core/Divider';
 
 export default function HomePage() {
 
@@ -39,7 +40,9 @@ export default function HomePage() {
                                 borderRadius: '23px',
                                 color: '#ffffff',
                                 width: '35%',
-                                fontFamily: 'Roboto'
+                                fontSize: '18px',
+                                fontFamily: 'Roboto',
+                                textTransform: 'none'
                             }}>
                                 Cadastrar PET
                             </Button>
@@ -48,7 +51,9 @@ export default function HomePage() {
                                     backgroundColor: '#D10000',
                                     borderRadius: '23px',
                                     color: '#ffffff',
-                                    fontFamily: 'Roboto'
+                                    fontFamily: 'Roboto',
+                                    fontSize: '18px',
+                                    textTransform: 'none'
                                 }}>
                                     Sair
                                 </Button>
@@ -58,9 +63,10 @@ export default function HomePage() {
                     <Grid container className="middleHome">
                         <Grid item>
                             <input style={{
-                                width: '100%',
-                                height: '30px',
-                                // marginLeft: '130%'
+                                width: '600px',
+                                paddingLeft: '3%',
+                                height: '35px',
+                                marginLeft: '-3%',
                                 borderRadius: '20px'
                             }}
                                 id="outlined-adornment-search"
@@ -70,10 +76,67 @@ export default function HomePage() {
                             />
                         </Grid>
                     </Grid>
-                    <Grid container className="bottomHome">
-                        <Grid item>
-                            
+                    <Grid container className="middleHomeList">
+                        <Grid item className="animalList" style={{
+                            marginLeft: '8%',
+                        }}>
+                            <Grid container className="animalList">
+                                <Grid item>
+                                    <img alt="" src={imagemDog} style={{
+                                        borderRadius: '280px',
+                                        width: '145px',
+                                        height: '145px'
+                                    }} />
+                                </Grid>
+                                <Grid item style={{ marginLeft: '15%' }}>
+                                    <h1>zézinho</h1>
+                                    <div className="textoLista" style={{
+                                        marginTop: '-25%'
+                                    }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                </Grid>
+                            </Grid>
+                            <Divider variant="middle" style={{
+                                width: '100%',
+                            }} />
+                            <Grid container className="animalList">
+                                <Grid item>
+                                    <img alt="" src={imagemDog} style={{
+                                        borderRadius: '280px',
+                                        width: '145px',
+                                        height: '145px'
+                                    }} />
+                                </Grid>
+                                <Grid item style={{ marginLeft: '15%' }}>
+                                    <h1>zézinho</h1>
+                                    <div className="textoLista" style={{
+                                        marginTop: '-25%'
+                                    }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                </Grid>
+                            </Grid>
+                            <Divider variant="middle" style={{
+                                width: '100%'
+                            }} />
+                            <Grid container className="animalList">
+                                <Grid item>
+                                    <img alt="" src={imagemDog} style={{
+                                        borderRadius: '280px',
+                                        width: '145px',
+                                        height: '145px'
+                                    }} />
+                                </Grid>
+                                <Grid item style={{ marginLeft: '15%' }}>
+                                    <h1>zézinho</h1>
+                                    <div className="textoLista" style={{
+                                        marginTop: '-25%'
+                                    }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                </Grid>
+                            </Grid>
                         </Grid>
+                    </Grid>
+                    <Grid container className="bottomHome">
+                        <Button className="verMais">
+                            Ver Mais
+                        </Button>
                     </Grid>
                 </Grid>
                 <img alt="" src={imagemFundo} style={{
