@@ -75,7 +75,7 @@ export default function Cadastro1() {
                                         id="outlined-adornment-password"
                                         placeholder="Data de nascimento"
                                         variant="outlined"
-                                        type="email"
+                                        type="date"
                                         InputProps={{
                                             endAdornment: <InputAdornment></InputAdornment>,
                                         }}

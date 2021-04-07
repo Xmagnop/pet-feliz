@@ -13,12 +13,12 @@ import swal from 'sweetalert';
 export default function Cadastro2() {
 
     const submitCadastro = () => {
-        return(
+        return (
             swal({
                 title: "Cadastro Realizado!",
                 text: "obrigado por entrar em nossa comunidade",
                 icon: "success",
-              })
+            })
         );
     }
 
@@ -31,7 +31,7 @@ export default function Cadastro2() {
                 }} />
                 <Grid className="loginBox">
                     <Grid style={{
-                        width:'35%'
+                        width: '35%'
                     }}>
                         <img alt='' src={imagemCadastro1} />
                     </Grid>
@@ -96,21 +96,24 @@ export default function Cadastro2() {
                                         justifyContent: "center",
                                         marginTop: '7%'
                                     }}>
-                                        <Button
-                                            type="submit"
-                                            variant="contained"
-                                            onClick={submitCadastro}
-                                            style={{
-                                                textTransform: "none",
-                                                color: "#ffffff",
-                                                fontSize: 20,
-                                                borderRadius: 20,
-                                                width: "50%",
-                                                backgroundColor: "#F36B53",
-                                            }}
-                                        >
-                                            Cadastrar
+                                        <Link to="/home" style={{ textDecoration: 'none' }}>
+                                            <Button
+                                                type="submit"
+                                                variant="contained"
+                                                onClick={submitCadastro}
+                                                style={{
+                                                    textTransform: "none",
+                                                    color: "#ffffff",
+                                                    fontSize: 20,
+                                                    borderRadius: 20,
+                                                    marginLeft: '-19%',
+                                                    width: '140%',
+                                                    backgroundColor: "#F36B53",
+                                                }}
+                                            >
+                                                Cadastrar
                                         </Button>
+                                        </Link>
                                     </Grid>
                                     <Grid
                                         style={{

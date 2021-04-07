@@ -1,0 +1,71 @@
+.loginPage{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFFFF0;
+}
+
+.loginBoxHome{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 1%;
+    box-shadow: 0px 0px 15px #00000029;
+    margin-top: 0%;
+    box-sizing: border-box;
+    height: inherit;
+    width: 70vw;
+    z-index: 101;
+}
+
+.topHome{
+    display:flex;
+    justify-content: space-around !important;
+    align-items: flex-start;
+}
+
+.middleHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input[type="text" i] {
+    background-color: #ffffff;
+    padding-right: 0px !important;
+    border-radius: 20px !important;
+}
+
+.animalList{
+    display: flex !important;
+    flex-flow: wrap !important;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+}
+
+.textoLista{
+    display: flex !important;
+    flex-flow: nowrap !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verMais{
+    width: 15% !important;
+    font-size: 18px !important;
+    text-transform: none !important;
+    color: #0863CD !important;
+    background: #FFFFFF !important;
+    border: 2px solid #CBCBCB !important;
+    box-sizing: border-box !important; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 29.5px !important;
+}

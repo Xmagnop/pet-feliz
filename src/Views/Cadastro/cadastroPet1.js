@@ -113,7 +113,7 @@ export default function CadastroPet1() {
                                             justifyContent: "center",
                                         }}
                                     >
-                                        <Link to="/cadastropet1" style={{
+                                        <Link to="/home" style={{
                                             textDecoration: 'none'
                                         }}>
                                             <Button
