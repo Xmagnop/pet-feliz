@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center !important;
-    background-color: #0863CD;
-    height: 130%;
+    background: rgba(8, 99, 205, 1);
+    height: 45%;
 }
 
 .entire-top{
     display: flex;
-    width: 60%;
+    width: 60% !important;
     justify-content: center;
     align-items: center;
     z-index: 101;
@@ -22,16 +22,69 @@
 .photoText{
     color:white;
     font-family: 'Roboto';
+    font-weight: bold;
     font-size: 22px;
+    margin-left: 10px;
 }
 
-/* .wrapPhoto{
-    display: flex;
-    flex-wrap: nowrap;
-} */
+.photoText2{
+    color:white;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+.textDivider{
+    color:azure;
+}
+
 .underPhoto{
     display: flex;
+    margin-left: 2%;
+    margin-top: -5%;
+    width: 100%;
     flex-flow: wrap;
-    align-items: center;
+    align-self: flex-start;
+    align-items: flex-start;
     justify-content: flex-start;
+}
+
+.restPage{
+    display: flex;
+    background-color: white;
+    height: 67%;
+    padding-bottom: 5%;
+}
+
+.buttons{
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+.textContainer{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title{
+    color: #000000;
+    font-family: 'Roboto';
+    width: 100%;
+    font-size: 35px;
+}
+
+.porqueText{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.bottom-details-page{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -35,17 +35,19 @@ export default function HomePage() {
                             marginTop: '2%',
                             marginRight: '-15%'
                         }}>
-                            <Button style={{
-                                backgroundColor: '#4EBDEA',
-                                borderRadius: '23px',
-                                color: '#ffffff',
-                                width: '35%',
-                                fontSize: '18px',
-                                fontFamily: 'Roboto',
-                                textTransform: 'none'
-                            }}>
-                                Cadastrar PET
+                            <Link to="/cadastropet1" style={{ textDecoration: 'none' }} >
+                                <Button style={{
+                                    backgroundColor: '#4EBDEA',
+                                    borderRadius: '23px',
+                                    color: '#ffffff',
+                                    width: '200px',
+                                    fontSize: '18px',
+                                    fontFamily: 'Roboto',
+                                    textTransform: 'none'
+                                }}>
+                                    Cadastrar PET
                             </Button>
+                            </Link>
                             <Link to="/" style={{ marginLeft: '2%', textDecoration: 'none' }}>
                                 <Button style={{
                                     backgroundColor: '#D10000',
@@ -82,53 +84,65 @@ export default function HomePage() {
                         }}>
                             <Grid container className="animalList">
                                 <Grid item>
-                                    <img alt="" src={imagemDog} style={{
-                                        borderRadius: '280px',
-                                        width: '145px',
-                                        height: '145px'
-                                    }} />
+                                    <Link to="/detalhes">
+                                        <img alt="" src={imagemDog} style={{
+                                            borderRadius: '280px',
+                                            width: '145px',
+                                            height: '145px'
+                                        }} />
+                                    </Link>
                                 </Grid>
                                 <Grid item style={{ marginLeft: '15%' }}>
-                                    <h1>zézinho</h1>
-                                    <div className="textoLista" style={{
-                                        marginTop: '-25%'
-                                    }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                    <Link to="/detalhes" style={{ textDecoration: 'none', color: 'black' }} ><h1>zézinho</h1></Link>
+                                    <Link to="/detalhes" style={{ textDecoration: 'none', color: 'black' }}>
+                                        <div className="textoLista" style={{
+                                            marginTop: '-25%'
+                                        }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                    </Link>
                                 </Grid>
                             </Grid>
                             <Divider variant="middle" style={{
                                 width: '100%',
                             }} />
                             <Grid container className="animalList">
-                                <Grid item>
-                                    <img alt="" src={imagemDog} style={{
-                                        borderRadius: '280px',
-                                        width: '145px',
-                                        height: '145px'
-                                    }} />
+                            <Grid item>
+                                    <Link to="/detalhes">
+                                        <img alt="" src={imagemDog} style={{
+                                            borderRadius: '280px',
+                                            width: '145px',
+                                            height: '145px'
+                                        }} />
+                                    </Link>
                                 </Grid>
                                 <Grid item style={{ marginLeft: '15%' }}>
-                                    <h1>zézinho</h1>
-                                    <div className="textoLista" style={{
-                                        marginTop: '-25%'
-                                    }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                    <Link to="/detalhes" style={{ textDecoration: 'none', color: 'black' }} ><h1>zézinho</h1></Link>
+                                    <Link to="/detalhes" style={{ textDecoration: 'none', color: 'black' }}>
+                                        <div className="textoLista" style={{
+                                            marginTop: '-25%'
+                                        }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                    </Link>
                                 </Grid>
                             </Grid>
                             <Divider variant="middle" style={{
                                 width: '100%'
                             }} />
                             <Grid container className="animalList">
-                                <Grid item>
-                                    <img alt="" src={imagemDog} style={{
-                                        borderRadius: '280px',
-                                        width: '145px',
-                                        height: '145px'
-                                    }} />
+                            <Grid item>
+                                    <Link to="/detalhes">
+                                        <img alt="" src={imagemDog} style={{
+                                            borderRadius: '280px',
+                                            width: '145px',
+                                            height: '145px'
+                                        }} />
+                                    </Link>
                                 </Grid>
                                 <Grid item style={{ marginLeft: '15%' }}>
-                                    <h1>zézinho</h1>
-                                    <div className="textoLista" style={{
-                                        marginTop: '-25%'
-                                    }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                    <Link to="/detalhes" style={{ textDecoration: 'none', color: 'black' }} ><h1>zézinho</h1></Link>
+                                    <Link to="/detalhes" style={{ textDecoration: 'none', color: 'black' }}>
+                                        <div className="textoLista" style={{
+                                            marginTop: '-25%'
+                                        }} ><h3>Animal:</h3><p style={{ fontSize: '18px', marginLeft: '2%' }} >Cachorro</p></div>
+                                    </Link>
                                 </Grid>
                             </Grid>
                         </Grid>
