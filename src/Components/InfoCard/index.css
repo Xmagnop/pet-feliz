@@ -1,0 +1,14 @@
+.animalList{
+    display: flex !important;
+    flex-flow: wrap !important;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+}
+
+.textoLista{
+    display: flex !important;
+    flex-flow: nowrap !important;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -7,6 +7,7 @@ import CadastroPagePet1 from './Views/Cadastro/cadastroPet1';
 import CadastroPagePet2 from './Views/Cadastro/cadastroPet2';
 import HomePage from './Views/Home/Home';
 import DetalhesPet from './Views/Detalhes/detalhes';
+import ProductsPage from './Views/Products/products';
 
 const Routes = () => (
     <BrowserRouter>
@@ -18,6 +19,7 @@ const Routes = () => (
             <Route exact path="/cadastropet2" component={CadastroPagePet2} />
             <Route exact path="/home" component={HomePage} />
             <Route exact path="/detalhes" component={DetalhesPet} />
+            <Route exact path="/produtos" component={ProductsPage} />
         </Switch>
     </BrowserRouter>
 );

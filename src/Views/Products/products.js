@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import imagemFundo from '../../images/fundo-pet-feliz.png';
 import imagemLogo from '../../images/imagem-loginPage.png';
-import './Home.css'
+import './products.css'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Button from "@material-ui/core/Button";
 import { Link } from 'react-router-dom';
@@ -10,23 +10,23 @@ import imagemDog from '../../images/cachorropetfeliz.jpg';
 import Divider from '@material-ui/core/Divider';
 import InfoCard from '../../Components/InfoCard';
 
-export default function HomePage() {
+export default function ProductsPage() {
 
-    const animalMock = [
+    const productMock = [
         {
-            name: "Zézinho",
+            name: "Coleira",
             image: imagemDog,
-            animal: "Cachorro",
+            price: "R$20,00",
         },
         {
-            name: "Zezão",
+            name: "Ração",
             image: imagemDog,
-            animal: "Cachorro",
+            price: "R$40,00",
         },
         {
-            name: "Zé",
+            name: "Osso",
             image: imagemDog,
-            animal: "Gato",
+            price: "R$10,00",
         },
     ]
 
@@ -54,19 +54,6 @@ export default function HomePage() {
                             marginTop: '2%',
                             marginRight: '-15%'
                         }}>
-                            <Link to="/cadastropet1" style={{ textDecoration: 'none' }} >
-                                <Button style={{
-                                    backgroundColor: '#4EBDEA',
-                                    borderRadius: '23px',
-                                    color: '#ffffff',
-                                    width: '200px',
-                                    fontSize: '18px',
-                                    fontFamily: 'Roboto',
-                                    textTransform: 'none'
-                                }}>
-                                    Cadastrar PET
-                                </Button>
-                            </Link>
                             <Link to="/" style={{ marginLeft: '2%', textDecoration: 'none' }}>
                                 <Button style={{
                                     backgroundColor: '#D10000',
@@ -83,24 +70,22 @@ export default function HomePage() {
                     </Grid>
                     <Grid container className="middleHome">
                         <Grid item>
-                            <Link to="/produtos" style={{ textDecoration: 'none' }} >
-                                <Button style={{
-                                    backgroundColor: 'green',
-                                    width: '300px',
-                                    borderRadius: '23px',
-                                    color: '#ffffff',
-                                    fontFamily: 'Roboto',
-                                    fontSize: '20px',
-                                    textTransform: 'none'
-                                }}>
-                                    Acesse nossa Loja
-                                </Button>
-                            </Link>
+                            <Button style={{
+                                backgroundColor: 'cadetblue',
+                                width: '150px',
+                                borderRadius: '23px',
+                                color: '#ffffff',
+                                fontFamily: 'Roboto',
+                                fontSize: '20px',
+                                textTransform: 'none'
+                            }}>
+                                Carrinho
+                            </Button>
                         </Grid>
                     </Grid>
                     <Grid container className="middleHomeList">
                         {
-                            animalMock.map((item, index) => (
+                            productMock.map((item, index) => (
                                 <>
                                     <InfoCard
                                         key={index}
@@ -117,9 +102,19 @@ export default function HomePage() {
                         }
                     </Grid>
                     <Grid container className="bottomHome">
-                        <Button className="verMais">
-                            Ver Mais
-                        </Button>
+                        <Link to="/home" style={{ textDecoration: 'none' }} >
+                            <Button style={{
+                                textTransform: 'none',
+                                boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                                border: '2px solid #CBCBCB',
+                                width: '15vw',
+                                color: 'rgba(8, 99, 205, 0.79)',
+                                fontFamily: 'Roboto',
+                                fontWeight: 'bold',
+                                fontSize: '20px',
+                                borderRadius: '30px'
+                            }} >Voltar</Button>
+                        </Link>
                     </Grid>
                 </Grid>
                 <img alt="" src={imagemFundo} style={{
